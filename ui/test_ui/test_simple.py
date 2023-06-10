@@ -1,5 +1,6 @@
 import time
 import pytest
+import allure
 
 from ui import locators
 from ui.test_ui.base import BaseCase
@@ -7,10 +8,10 @@ from ui.test_ui.base import BaseCase
 @pytest.mark.UI
 class Test1(BaseCase):
     @pytest.mark.UI
-    @allure.feature('Ввод текста')
+    @allure.feature('Enter text')
     def test_login(self):
         self.page.enter_text()
-        with allure.step("Сравниваем что ввели и что показывает"):
+        with allure.step("Pass text and check"):
             assert self.page.find(locators.MainPageLocators.P_BLOCK_LOCATOR).text == "ЦГАТ02ГП230ПЕ"
         #time.sleep(1500)
         #assert True
