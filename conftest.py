@@ -35,7 +35,7 @@ def config(request):
 def driver(config):
     browser = webdriver.Remote(
         command_executor="http://192.168.1.39:4444/wd/hub",
-        to_capabilities=capabilities)
+        desired_capabilities=capabilities)
 
     browser.maximize_window()
 
