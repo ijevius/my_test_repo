@@ -34,7 +34,7 @@ def config(request):
 @pytest.fixture(scope='function')
 def driver(config):
     browser = webdriver.Remote(
-        command_executor="http://192.168.1.39:4444/",
+        command_executor="http://192.168.1.39:4444/wd/hub",
         desired_capabilities=capabilities)
 
     browser.maximize_window()
