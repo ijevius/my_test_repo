@@ -19,7 +19,7 @@ class Test1(BaseCase):
     def test_second(self):
         assert 2*2==4
     @allure.feature('Third test')
-    def test_second(self):
+    def test_third(self):
         with allure.step("2+2*2"):
             assert 2+2*2==6
      
