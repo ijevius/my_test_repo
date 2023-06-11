@@ -15,4 +15,8 @@ class Test1(BaseCase):
             assert self.page.find(locators.MainPageLocators.P_BLOCK_LOCATOR).text == "ЦГАТ02ГП230ПЕ"
         #time.sleep(1500)
         #assert True
+    @allure.feature('Second test')
+    def test_second(self):
+        assert 2*2==4
+     
 
