@@ -5,7 +5,6 @@ import allure
 from ui import locators
 from ui.test_ui.base import BaseCase
 
-@pytest.mark.UI
 class Test1(BaseCase):
     @pytest.mark.UI
     @allure.feature('Enter text')
