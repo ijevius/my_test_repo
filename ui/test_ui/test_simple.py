@@ -26,6 +26,10 @@ class Test1(BaseCase):
     def test_fourth(self):
         with allure.step("Fourth"):
             assert True
+    @allure.feature('Fail test')
+    def test_shouldfail(self):
+        with allure.step("Lets fail"):
+            assert 2==3
      
      
 
