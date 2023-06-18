@@ -12,7 +12,7 @@ class Test1(BaseCase):
         self.page.enter_text()
         with allure.step("Pass text and check"):
             assert self.page.find(locators.MainPageLocators.P_BLOCK_LOCATOR).text == "ЦГАТ02ГП230ПЕ"
-        #time.sleep(1500)
+        time.sleep(10)
         #assert True
     @allure.feature('Second test')
     def test_second(self):
